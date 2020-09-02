@@ -1,0 +1,45 @@
+<input type="range" id="dimmer" min="0" max="10" />
+<button value="" id="toggle">включить</button><br>
+<img src="./bulb.png" alt="" id="bulb" hidden />
+<img src="./bulb_off.png" alt="" id="bulb_off"  />
+
+<style type="text/css">
+	body {
+		text-align: center;
+		margin-top: 250px;
+	}
+	#toggle {
+		background: red;
+		color: white;
+	}
+	#bulb, #bulb_off {
+		width: 100px;
+	}
+</style>
+<script>
+	const bulbToggle = document.getElementById('toggle');
+	const bulbDimmer = document.getElementById('dimmer');
+
+	const bulb = document.getElementById('bulb');		
+	const bulb_off = document.getElementById('bulb_off');
+
+	bulbDimmer.addEventListener('change', ()=> {
+		if(bulbToggle.innerText == 'выключить') {
+			bulb.style.opacity = bulbDimmer.value/10;	
+		}
+	});
+	bulbToggle.addEventListener('click',()=>{
+		//const bulb = document.getElementById('bulb');	
+		//const bulb2 = document.getElementById('bulb_off');	
+		if(bulb.hidden) {
+			bulb.hidden= false;
+			bulb_off.hidden = true;
+			bulbToggle.innerText = 'выключить'	
+		}
+		else {
+			bulb.hidden= true;
+			bulb_off.hidden = false;
+			bulbToggle.innerText = 'включить'	
+		}
+	});
+</script>
