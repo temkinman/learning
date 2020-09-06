@@ -7,7 +7,6 @@ alert(name);
 let earth;
 let currentUser;
 
-
 /*
 "" + 1 + 0   //10
 "" - 1 + 0 //-1
