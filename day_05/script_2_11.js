@@ -4,7 +4,7 @@
 «Включительно» означает, что значение переменной age может быть равно 14 или 90.
 */
 let age = 90;
-if(age >= 14 && age <= 90) {
+if (age >= 14 && age <= 90) {
   alert(`Ваш возраст ${age} в диапазоне 14-90`);
 }
 
@@ -15,11 +15,11 @@ if(age >= 14 && age <= 90) {
 */
 
 age = 13;
-if(!(age >= 14 && age <= 90)) {
+if (!(age >= 14 && age <= 90)) {
   alert(`1-й вариант:\nВаш возраст ${age} не в диапазоне 14-90`);
 }
 //2-й вариант
-if(age < 14 || age > 90) {
+if (age < 14 || age > 90) {
   alert(`2-й вариант:\n Ваш возраст ${age} не в диапазоне 14-90`);
 }
 
@@ -47,26 +47,22 @@ if(age < 14 || age > 90) {
   Если введён пароль «Я главный», то выводить «Здравствуйте!»,
   Иначе – «Неверный пароль»,
   При отмене – «Отменено».
-
   Для решения используйте вложенные блоки if. Обращайте внимание на стиль и читаемость кода.
-
-
  */
-
-let login = prompt("Введите логин", "");
 const ADMIN = 'Админ';
 const PASSWORD = 'Я главный';
+let login = prompt("Введите логин", "");
 
-if(login == '' || login == null) {
+if (login == '' || login == null) {
   alert('Отменено');
 }
-if(login == ADMIN) {
-  let answerPassword = prompt('Пароль?','');
+else if (login == ADMIN) {
+  let answerPassword = prompt('Пароль?', '');
 
-  if(answerPassword == '' || answerPassword == null) {
+  if (answerPassword == '' || answerPassword == null) {
     alert('Отменено');
   }
-  else if(PASSWORD == answerPassword) {
+  else if (answerPassword == PASSWORD) {
     alert('Здравствуйте');
   }
   else {

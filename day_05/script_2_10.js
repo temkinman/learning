@@ -6,7 +6,7 @@
 const ECMASCRIPT = 'ecmascript';
 let userAnswer = prompt("Какое «официальное» название JavaScript?", "");
 
-if(ECMASCRIPT == userAnswer.toLowerCase()) {
+if (ECMASCRIPT == userAnswer.toLowerCase()) {
     alert('Верно!');
 }
 else {
@@ -24,7 +24,7 @@ else {
 
 let userNumber = prompt('Введите число:');
 
-if(userNumber > 0) {
+if (userNumber > 0) {
     alert(1);
 }
 else if (userNumber < 0) {
@@ -70,7 +70,7 @@ printMessage('Cool_Хацкер');
 
 function printMessage(login) {
     let message = (login == 'Сотрудник') ? 'Привет' :
-            (login == 'Директор') ? 'Здравствуйте' :
+        (login == 'Директор') ? 'Здравствуйте' :
             (login == '') ? 'Нет логина' : '';
     console.log(message);
 }
