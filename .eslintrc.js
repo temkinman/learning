@@ -3,10 +3,8 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
+  extends:
     'plugin:react/recommended',
-    'airbnb',
-  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -18,5 +16,10 @@ module.exports = {
     'react',
   ],
   rules: {
+    'no-console': 0,
+    'no-alert': 0,
+    'no-restricted-globals': 0,
+    'no-plusplus': 0,
+    'no-unused-vars': 0,
   },
 };
