@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-menu {
+  display: flex;
+  background-color: #626262;
+  color: #ffffff;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.main {
+  flex: 1 1 0;
+  display: flex;
+}
+
+.left-menu {
+  flex: 0 0 300px;
+  background-color: lightgrey;
+  overflow: auto;
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  background-color: darkgray;
+}
+
+.chat-top-menu {
+  flex: 0 0 50px;
+}
+
+.chat {
+  flex: 1 1 0;
+}
+
+.message {
+  display: flex;
+  flex: 0 0 100px;
+}
+
+.message-input {
+  flex: 1 1 0;
+}
+
+.send-button {
+  flex: 0 0 100px;
+}
+
+.top-menu-left {
+  margin-right: auto;
+}
+
+.top-menu-right {
+  margin-left: auto;
+}
+
+.big-content {
+  height: 5000px;
+  width: 3000px;
+}
