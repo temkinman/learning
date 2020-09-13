@@ -1,96 +1,96 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 1360px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 1360px;
+  margin: 0 auto;
 }
 
 .top-menu {
-    display: flex;
-    background-color: darkgray;
-    padding: 10px;
-    padding-top: 20px;
-    background-color: #0a0a0a38;
-    border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  background-color: darkgray;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: #0a0a0a38;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .top-menu-left {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .top-menu-right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .main {
-    display: flex;
-    flex: 1 1 0;
-    background-color: darkkhaki;
+  display: flex;
+  flex: 1 1 0;
+  background-color: darkkhaki;
 }
 
 .main-content {
-    flex: 1 1 0;
-    overflow: auto;
+  flex: 1 1 0;
+  overflow: auto;
 }
 
 .last-news {
-    flex: 0 0 300px;
-    background-color: #f7f7f7;
-    border-left: 1px solid #e5e5e5;
+  flex: 0 0 300px;
+  background-color: #f7f7f7;
+  border-left: 1px solid #e5e5e5;
 }
 
 footer {
-    flex: 0 0 70px;
-    background-color: #0a0a0a38
+  flex: 0 0 70px;
+  background-color: #0a0a0a38;
 }
 
 .header-main-content {
-    padding: 20px;
-    display: flex;
-    background-color: navajowhite;
+  padding: 20px;
+  display: flex;
+  background-color: navajowhite;
 }
 
 .logo {
-    flex: 0 0 200px;
+  flex: 0 0 200px;
 }
 
 .search {
-    flex: 1 1 0;
-    display: flex;
+  flex: 1 1 0;
+  display: flex;
 }
 
 .search-input {
-    flex: 1 1 0;
-    max-width: 680px;
-    padding: 5px;
-    height: 34px;
-    border: 1px solid lightslategray;
-    font-size: 16px;
+  flex: 1 1 0;
+  max-width: 680px;
+  padding: 5px;
+  height: 34px;
+  border: 1px solid lightslategray;
+  font-size: 16px;
 }
 
 .find-input {
-    flex: 0 0 50px;
-    border: 1px solid lightslategray;
-    border-left: none;
-    font-weight: 700;
-    padding: 0 20px;
-    font-size: 15px;
+  flex: 0 0 50px;
+  border: 1px solid lightslategray;
+  border-left: none;
+  font-weight: 700;
+  padding: 0 20px;
+  font-size: 15px;
 }
 
 .top-menu-center ul li {
-    display: inline;
-    list-style-type: none;
+  display: inline;
+  list-style-type: none;
 }
 
-.top-menu-center ul  {
-    margin: 0;
+.top-menu-center ul {
+  margin: 0;
 }
 
 .top-menu-center ul a {
-    display: inline;
-    text-decoration: none;
+  display: inline;
+  text-decoration: none;
 }
