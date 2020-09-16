@@ -1,9 +1,10 @@
 function readNumber() {
+  let number;
   do {
-    let number = prompt("Enter number", '');
+    number = prompt("Enter number", '');
     console.log('num = ' + number);
   }
-  while (number != null && number != "" && !(+number))
+  while (number != null && number != "" && !Number.isFinite(number))
   return number;
 }
 
