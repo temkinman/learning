@@ -11,10 +11,10 @@ body {
   background-color: lightblue;
 }
 
-h1 {
+.name-app {
   color: white;
   font-family: monospace;
-  font-size: 4em;
+  font-size: 5rem;
 }
 
 .add-todo {
@@ -26,7 +26,7 @@ h1 {
 .todo-input {
   flex: 1 1 0;
   padding: 10px 5px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: darkslategrey;
   border: 1px solid gray;
   border-radius: 5px;
@@ -42,7 +42,7 @@ h1 {
   flex: 0 0 110px;
   border-radius: 5px;
   border: 1px solid gray;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -58,11 +58,21 @@ h1 {
   flex-direction: column;
   text-align: center;
 }
-.todos ul {
-  margin: 15px;
+
+.todos-list {
+  margin: 0;
   padding: 0;
+}
+
+.todos li {
   list-style: none;
-  max-width: 95%;
+  margin: 0rem 0.9rem 0.5rem;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .todo-added {
@@ -75,13 +85,11 @@ h1 {
   color: white;
   border: 2px solid #08120e1f;
   border-radius: 8px;
-
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .todo-added:hover {
-  transition: 1s;
   box-shadow: 5px 6px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -89,7 +97,7 @@ h1 {
   visibility: visible;
 }
 
-.todo-added input {
+.todo-title {
   margin-bottom: 0;
   margin-right: 10px;
 }
@@ -107,6 +115,6 @@ h1 {
   padding: 20px;
 }
 
-.show-diff-todos button {
+.mr-5 {
   margin-right: 5px;
 }

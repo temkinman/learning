@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map и Set Task 7.3</title>
+</head>
+<body>
+    <h1>Перебираемые ключи</h1>
+    <pre>
+        Мы хотели бы получить массив ключей map.keys() в переменную и далее работать с ними, например, применить метод .push.
+
+        Но это не выходит:
+
+        let map = new Map();
+
+        map.set("name", "John");
+
+        let keys = map.keys();
+
+        // Error: keys.push is not a function
+        // Ошибка: keys.push -- это не функция
+        keys.push("more");
+        Почему? Что нужно поправить в коде, чтобы вызов keys.push сработал?
+    </pre>
+    <b>Результат в консоли</b>
+    <script src="./task_7_3.js"></script>
+</body>
+</html>
